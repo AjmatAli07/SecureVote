@@ -2,7 +2,7 @@
 
 A secure and modern web-based online voting system developed for conducting small district elections. The system provides role-based authentication, election management, secure voting, and result visualization using Supabase.
 
-## 🚀 Features
+Features
 
 ### 👤 Voter
 - Register and login securely
