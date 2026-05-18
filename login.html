@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - SecureVote</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🗳️ SecureVote</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <section class="auth-container">
+
+    <div class="auth-box">
+      <h2>Welcome Back</h2>
+      <p>Login to cast your vote securely</p>
+
+      <!-- Form -->
+      <form id="loginForm">
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" class="btn-primary full-width">
+          Login
+        </button>
+
+        <p class="switch-text">
+          Don't have an account?
+          <a href="register.html">Register</a>
+        </p>
+
+      </form>
+
+      <!-- Error Message -->
+      <p id="errorMsg" class="error-msg"></p>
+
+    </div>
+
+  </section>
+
+  <!-- JS -->
+  <script type="module" src="js/auth.js"></script>
+
+</body>
+</html>

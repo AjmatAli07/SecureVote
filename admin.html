@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - SecureVote</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🗳️ Admin Panel</div>
+    <nav>
+      <a href="vote.html">Vote Page</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+  </header>
+
+  <section class="admin-container">
+
+    <h2>Conduct Election</h2>
+
+    <!-- ✅ SINGLE CLEAN SECTION -->
+    <div class="admin-card">
+
+      <input type="text" id="title" placeholder="Election Title">
+      <input type="text" id="district" placeholder="District / Area">
+      <input type="datetime-local" id="start">
+      <input type="datetime-local" id="end">
+
+      <h4 style="margin-top:15px;">Candidates</h4>
+
+      <div id="candidateList"></div>
+
+      <button id="addCandidate" class="btn-outline">+ Add Candidate</button>
+
+      <button id="createElection" class="btn-primary" style="margin-top:15px;">
+        Create Election
+      </button>
+
+    </div>
+
+    <!-- Publish Results -->
+    <div class="admin-card">
+      <h3>Publish Results</h3>
+      <button id="publishResultsBtn" class="btn-primary">Publish Results</button>
+    </div>
+
+    <p id="message" class="message"></p>
+
+  </section>
+
+  <script type="module" src="js/admin.js"></script>
+
+</body>
+</html>

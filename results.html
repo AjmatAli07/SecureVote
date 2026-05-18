@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Results - SecureVote</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/results.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🗳️ SecureVote</div>
+    <nav>
+      <a href="vote.html">Vote</a>
+      <a href="results.html">Results</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Results Section -->
+  <section class="results-container">
+
+    <h2>Election Results</h2>
+    <p class="subtitle">Visible after result declaration</p>
+
+    <!-- Election Title -->
+    <div id="electionTitle" class="election-title"></div>
+
+    <!-- Message -->
+    <p id="message" class="message"></p>
+
+    <!-- Chart -->
+    <div class="chart-container">
+      <canvas id="resultsChart"></canvas>
+    </div>
+
+    <!-- Results List -->
+    <div id="resultsList" class="results-list"></div>
+
+  </section>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- JS -->
+  <script type="module" src="js/results.js"></script>
+
+</body>
+</html>

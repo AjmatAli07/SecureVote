@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vote - SecureVote</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/voting.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🗳️ SecureVote</div>
+    <nav>
+      <a href="results.html">Results</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Voting Section -->
+  <section class="voting-container">
+
+    <h2>Cast Your Vote</h2>
+    <p class="subtitle">Select one candidate and confirm your vote</p>
+
+    <!-- Election Title -->
+    <div id="electionTitle" class="election-title"></div>
+
+    <!-- Candidates Grid -->
+    <div id="candidatesContainer" class="candidates-grid">
+      <!-- Candidates will be loaded dynamically -->
+    </div>
+
+    <!-- Message -->
+    <p id="message" class="message"></p>
+
+  </section>
+
+  <!-- Confirm Modal -->
+  <div id="confirmModal" class="modal">
+    <div class="modal-content">
+      <h3>Confirm Your Vote</h3>
+      <p id="selectedCandidateName"></p>
+
+      <div class="modal-buttons">
+        <button id="confirmVoteBtn" class="btn-primary">Confirm</button>
+        <button id="cancelVoteBtn" class="btn-outline">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script type="module" src="js/vote.js"></script>
+
+</body>
+</html>

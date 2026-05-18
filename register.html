@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - SecureVote</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🗳️ SecureVote</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Register Section -->
+  <section class="auth-container">
+
+    <div class="auth-box">
+      <h2>Create Account</h2>
+      <p>Register to participate in secure voting</p>
+
+      <!-- Form -->
+      <form id="registerForm">
+
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" id="password" placeholder="Create a password" required>
+        </div>
+
+        <div class="input-group">
+          <label>District</label>
+          <input type="text" id="district" placeholder="Enter your district" required>
+        </div>
+
+        <!-- ✅ ADDED ROLE SELECTION -->
+        <div class="input-group">
+          <label>Register As</label>
+          <select id="role" required>
+            <option value="voter">Voter</option>
+            <option value="admin">Election Official</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary full-width">
+          Register
+        </button>
+
+        <p class="switch-text">
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+
+      </form>
+
+      <!-- Error Message -->
+      <p id="errorMsg" class="error-msg"></p>
+
+    </div>
+
+  </section>
+
+  <!-- JS -->
+  <script type="module" src="js/auth.js"></script>
+
+</body>
+</html>
